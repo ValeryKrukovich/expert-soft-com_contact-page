@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/contacts.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -58,13 +59,41 @@
             </div>
         </header>
 
-        <main>
+        <main class="contacts-page">
             <div class="contacts-page-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <form action="" method="post>
-
+            <form class="callback-form" action="" method="post">
+                <div class="callback-form__row">
+                    <div class="form-group callback-form__col">
+                        <label>First name*</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group callback-form__col">
+                        <label>Last name*</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="callback-form__row">
+                    <div class="form-group callback-form__col">
+                        <label>Email*</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group callback-form__col">
+                        <label>Company</label>
+                        <input type="text">                       
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Your inquiry or comments</label>
+                    <textarea rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" value="">
+                    <label>You are agreeing that Expert Software Development, LLC processes and uses your personal data for customer care and for professional communication.</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </main>
 
@@ -120,6 +149,8 @@
                                 </span>
                             </div>
                         </div>
+
+                        <button type="submit" class="btn btn_border">Send Message</button>
                     </div>
     
                     <div class="footer__section footer__section_quote">
