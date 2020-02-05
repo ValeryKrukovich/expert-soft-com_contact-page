@@ -79,16 +79,15 @@ textarea {
 .form-checkbox {
     position: relative;
     display: block;
-    padding: 0 30px 0 50px;
 }
 
 .callback-form__form-checkbox {
-    padding: 0 30px 80px 50px;
+    padding: 0 0 80px 20px;
 }
 
 .form-checkbox__input {
     position: absolute;
-    margin: 12px 0 0 -20px;
+    margin: 7px 0 0 -20px;
 }
 
 .form-checkbox__label {
@@ -96,7 +95,7 @@ textarea {
 }
 
 .form-checkbox__link {
-    color: var(--color-black);
+    color: var(--color-dark-blue);
 }
 
 .form-checkbox__link:hover {
@@ -147,5 +146,9 @@ textarea {
 
     .form-group__input {
         font-size: var(--font-size-main-text-ds);
+    }
+
+    .form-checkbox__input {
+        margin: 12px 0 0 -20px;
     }
 }
