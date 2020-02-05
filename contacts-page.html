@@ -65,31 +65,35 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <form class="callback-form" action="" method="post">
+            <form class="callback-form" action="" method="post" novalidate>
                 <div class="callback-form__row">
                     <div class="form-group callback-form__col">
                         <label class="form-group__label" for="first-name">First name</label>
-                        <input type="text" class="form-group__input" id="first-name">
+                        <input type="text" class="form-group__input" id="first-name" name="first-name">
+                        <span class="form-group__error-text"></span>
                     </div>
                     <div class="form-group callback-form__col">
                         <label  class="form-group__label" for="last-name">Last name</label>
-                        <input type="text" class="form-group__input form-group__input_error" id="last-name">
+                        <input type="text" class="form-group__input" id="last-name" name="last-name">
                         <span class="form-group__error-text"></span>
                     </div>
                 </div>
                 <div class="callback-form__row">
                     <div class="form-group callback-form__col">
                         <label class="form-group__label" for="email">Email</label>
-                        <input type="email" class="form-group__input" id="email">
+                        <input type="email" class="form-group__input" id="email" name="email">
+                        <span class="form-group__error-text"></span>
                     </div>
                     <div class="form-group callback-form__col">
                         <label class="form-group__label" for="company">Company</label>
-                        <input type="text" class="form-group__input" id="company">                   
+                        <input type="text" class="form-group__input" id="company" name="company">   
+                        <span class="form-group__error-text"></span>                
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="form-group__label" for="message-area">Your inquiry or comments</label>
-                    <textarea class="form-group__input" rows="5" id="message-area"></textarea>
+                    <textarea class="form-group__input" rows="5" id="message-area" name="message-area"></textarea>
+                    <span class="form-group__error-text"></span>
                 </div>
                 <div class="form-checkbox callback-form__form-checkbox">
                     <input type="checkbox" class="form-checkbox__input" value="" id="agreement">
