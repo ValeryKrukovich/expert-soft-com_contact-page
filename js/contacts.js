@@ -22,7 +22,7 @@ form.addEventListener('submit', function(event) {
             fields[i].classList.add('form-group__input_error');
             fields[i].nextElementSibling.innerHTML = 'Cannot be blank.';
         }
-        if (inputEmail.value !== 'vasilinakrukovich@gmail.com') {
+        if (inputEmail.value !== '') {
             inputEmail.nextElementSibling.innerHTML = 'Email is incorrect!';
         }
     }
