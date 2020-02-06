@@ -1,4 +1,5 @@
 :root {
+    --font-size-text-medium: 20px;
     --font-size-main-text-mb: 16px;
     --font-size-main-text-ds: 24px;
     --border-radius-primary: 10px;
@@ -74,6 +75,13 @@ textarea {
 .form-group__input_error {
     border-color: var(--color-red);
     box-shadow: var(--box-shadow-red);
+}
+
+.form-group__error-text {
+    display:  inline-block;
+    padding-top: 4px;
+    color: var(--color-red);
+    font-size: var(--font-size-text-medium);
 }
 
 .form-checkbox {

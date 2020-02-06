@@ -4,6 +4,10 @@ const inputEmail = document.querySelector('#email');
 const fields = document.querySelectorAll('.form-group__input');
 const btnSendMessage = document.querySelector('.footer__send-message');
 
+function emailIsValid(email) {
+    return /\S+@\S+\.\S+/.test(email)
+  }
+
 btnSendMessage.addEventListener('click', function() {
     inputFirstName.focus();
 });
@@ -20,10 +24,10 @@ form.addEventListener('submit', function(event) {
     for (let i = 0; i < fields.length; i++) {
         if (!fields[i].value) {
             fields[i].classList.add('form-group__input_error');
-            fields[i].nextElementSibling.innerHTML = 'Cannot be blank.';
+            fields[i].nextElementSibling.innerHTML = 'Cannot be blank!';
         }
-        if (inputEmail.value !== '') {
-            inputEmail.nextElementSibling.innerHTML = 'Email is incorrect!';
-        }
+    }
+    if (inputEmail.value !== '' && !emailIsValid(inputEmail.value)) {
+        inputEmail.nextElementSibling.innerHTML = 'Email is incorrect!';
     }
 });
