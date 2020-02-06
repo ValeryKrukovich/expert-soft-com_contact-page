@@ -137,6 +137,17 @@ textarea {
     }    
 }
 
+@media (min-width: 992px) {
+    .footer__section_contacts {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__send-message {
+        margin-top: auto;
+        align-self: flex-start;
+    }
+}
+
 @media (min-width: 1200px) {
     .contacts-page {
         width: 80%;
