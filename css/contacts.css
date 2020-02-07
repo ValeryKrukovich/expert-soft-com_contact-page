@@ -1,7 +1,6 @@
 :root {
+    --font-size-main-text: 16px;
     --font-size-text-medium: 20px;
-    --font-size-main-text-mb: 16px;
-    --font-size-main-text-ds: 24px;
     --border-radius-primary: 10px;
     --color-light-grey: #ced4da;
     --color-grey: #495057;
@@ -78,8 +77,6 @@ textarea {
 }
 
 .form-group__error-text {
-    display:  inline-block;
-    padding-top: 4px;
     color: var(--color-red);
     font-size: var(--font-size-text-medium);
 }
@@ -95,7 +92,8 @@ textarea {
 
 .form-checkbox__input {
     position: absolute;
-    margin: 7px 0 0 -20px;
+    left: 0;
+    top: 7px;
 }
 
 .form-checkbox__label {
@@ -155,6 +153,9 @@ textarea {
 }
 
 @media (min-width: 1399.98px) {
+    :root {
+        --font-size-main-text: 24px;
+    }
     .contacts-page__text {
         padding: 80px 0 60px;
     }
@@ -164,10 +165,10 @@ textarea {
     }
 
     .form-group__input {
-        font-size: var(--font-size-main-text-ds);
+        font-size: var(--font-size-main-text);
     }
 
     .form-checkbox__input {
-        margin: 12px 0 0 -20px;
+        top: 12px;
     }
 }
