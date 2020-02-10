@@ -8,6 +8,7 @@
     --color-dark-blue: #2c4d9a;
     --color-red: #e41d36;
     --color-black: #000000;
+    --color-green: #4CAF50;
     --box-shodow-blue: 0 0 0 2px rgba(0,123,255,.25);
     --box-shadow-red: 0 0 0 2px rgba(220,53,69,.25);
 }
@@ -27,6 +28,7 @@ textarea {
 
 .contacts-page__text h1 {
     text-align: center;
+    text-transform: uppercase;
 }
 
 .contacts-page__text p {
@@ -41,7 +43,13 @@ textarea {
     content: "";
     display: block; 
     clear: both;
-  }
+}
+
+.callback-form__message {
+    color: var(--color-green);
+    text-align: center;
+    margin-bottom: 70px;
+}
 
 .form-group {
     margin: 0 0 25px;
