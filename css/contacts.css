@@ -144,11 +144,13 @@ textarea {
 }
 
 @media (min-width: 992px) {
-    .footer__section_contacts {
+    .footer__section_contacts,
+    .footer__section_quote {
         display: flex;
         flex-direction: column;
     }
-    .footer__send-message {
+    .footer__send-message,
+    .footer__linkedin-btn {
         margin-top: auto;
         align-self: flex-start;
     }
