@@ -5,11 +5,51 @@
     <title>Expert-Soft: Contacts page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+    <!-- <meta property="og:image" content="https://expert-soft.com/images/logo.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="833" />
+	<meta property="og:image:height" content="451" />
+    <meta property="og:title" content="Expert Soft. E-commerce boutique agency, provider of high-quality IT solutions for your digital transformation journey.">
+
+    <meta name="Description" content="Expert Soft is a software company with delivery centers in the US and Europe, that successfully develop large scale enterprise e-commerce projects since 2013. Oracle Gold Partner and SAP Hybris Partner. Innovating on Digital Commerce, helping customers to create new business models and revenue streams. Key technologies are SAP Hybris Commerce (with Java 8 and Spring under the hood), as well as Oracle Commerce (ATG) and Oracle Cloud Commerce (OCC). Expert Soft has a number of custom Java Development projects in our portfolio Out R&D department integrates our solutions with Sitecore, Microservices based CommerceTools, Abode Experience Management (AEM), Intershop, etc." />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Recognized by our Customers as a leader in E-commerce technology, strategy, digital commerce industry insights, and customer-focused Front-End."> -->
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/contacts.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KBMT9VB');</script>
+    
+    
+        <script src="https://www.google.com/recaptcha/api.js?render=6Ld-IMQUAAAAAFHBjUJuos8coV0NYEfG9yboaAh4"></script>
+        <script>
+            grecaptcha.ready(function() {
+                $('.g-recaptcha-response').each(function(index, item) {
+                    grecaptcha.execute('6Ld-IMQUAAAAAFHBjUJuos8coV0NYEfG9yboaAh4', {action: 'homepage'}).then(function(token) {
+                        item.value = token;
+                    });
+                });
+            });
+        </script>
+        <style>
+    
+            /* Скрывает значок капчи справа снизу */
+            .grecaptcha-badge {
+                opacity: 0 !important;
+            }
+        </style>
+    
+    
+    <!-- End Google Tag Manager -->
 </head>
 <body>
     <div class="wrapper">
@@ -62,20 +102,21 @@
         <main class="contacts-page">
             <div class="contacts-page__text">
                 <h1>European boutique e-commerce software provider</h1>
-                <p>Expert Soft - boutique highly specialized e-commerce software delivery company and open Java stack with a strong team of high professionals.</p>
+                <p>Expert Soft - boutique highly specialized e-commerce software delivery and open Java stack company with a strong team of high professionals.</p>
                 <p>Just drop us your question and we will get back to you with a prompt reply!</p>
             </div>
-            <form class="callback-form" action="" method="post" novalidate>
-                <div class="callback-form__message">Thank you! Your message has been sent.</div>
+            <form class="callback-form" action="sendmailContacts.php" method="post" novalidate>
+                <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response">
+                <div class="callback-form__message"></div>
                 <div class="callback-form__row">
                     <div class="form-group callback-form__col">
                         <label class="form-group__label" for="first-name">First name</label>
-                        <input type="text" class="form-group__input" id="first-name" name="first-name">
+                        <input type="text" class="form-group__input" id="first-name" name="firstName">
                         <span class="form-group__error-text"></span>
                     </div>
                     <div class="form-group callback-form__col">
                         <label  class="form-group__label" for="last-name">Last name</label>
-                        <input type="text" class="form-group__input" id="last-name" name="last-name">
+                        <input type="text" class="form-group__input" id="last-name" name="lastName">
                         <span class="form-group__error-text"></span>
                     </div>
                 </div>
@@ -154,7 +195,7 @@
                                 <span class="footer__contacts-item-content">
                                     <a href="tel:+375333800060" class="footer__contacts-phone-link">+375&nbsp;33&nbsp;3800060&nbsp;<span class="icon-phone"></span></a>
                                 </span>
-                            </div>
+                            </div>                         
                         </div>
                         <button type="submit" class="footer__send-message btn btn_border">Send Message</button>
                     </div>
@@ -168,6 +209,7 @@
         </footer>
 
     </div>
+    <script src="lib/jquery-3.3.1/jquery-3.3.1.min.js"></script>
     <script src="js/contacts.js"></script>
 </body>
 </html>

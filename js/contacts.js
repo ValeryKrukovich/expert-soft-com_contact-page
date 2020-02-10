@@ -15,18 +15,24 @@ function emailIsValid(email) {
 }
 
 function checkFieldsPresence() {
+    let error = true;
     for (let i = 0; i < fields.length; i++) {
         if (!fields[i].value) {
             fields[i].classList.add('form-group__input_error');
             fields[i].nextElementSibling.innerHTML = 'Cannot be blank!';
+            error = false;
         }
     }
+    return error;
 }
 
 function checkEmailMatch() {
+    let error = true;
     if (inputEmail.value !== '' && !emailIsValid(inputEmail.value)) {
         inputEmail.nextElementSibling.innerHTML = 'Email is incorrect!';
+        error = false;
     }
+    return error;
 }
 
 for (let i = 0; i < fields.length; i++) {
@@ -42,5 +48,19 @@ form.addEventListener('submit', function(event) {
     checkFieldsPresence();
     
     checkEmailMatch();
+
+    if(checkFieldsPresence() && checkEmailMatch()) {
+        $.ajax({
+            type: "POST",
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            dataType: 'json',
+        }).done(function(data) {
+            $(this).reset();
+            let $message = $(this).find('.callback-form__message');
+
+            $message.text('Thank you! Your message has been sent.');
+        });
+    }
 
 });
