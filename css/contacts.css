@@ -23,7 +23,7 @@ textarea {
 }
 
 .contacts-page__text {
-    padding: 50px 0;
+    padding: 50px 0 30px 0;
 }
 
 .contacts-page__text h1 {
@@ -48,7 +48,7 @@ textarea {
 .callback-form__message {
     color: var(--color-green);
     text-align: center;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
 }
 
 .form-group {
@@ -106,6 +106,10 @@ textarea {
 
 .form-checkbox__label {
     display: inline-block;
+}
+
+.form-checkbox__label_error {
+    color: var(--color-red);
 }
 
 .form-checkbox__link {
