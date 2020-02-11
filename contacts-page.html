@@ -59,7 +59,7 @@
                 <div class="header__inner">
                     <div class="header__mob">
                         <div class="header__logo">
-                            <a href="index.php" class="logo">
+                            <a href="/" class="logo">
                                 <img src="images/logo.png" alt="" class="logo__img" width="311" height="79">
                             </a>
                         </div>
@@ -74,22 +74,22 @@
                             <nav class="nav">
                                 <ul class="nav__list">
                                     <li class="nav__item">
-                                        <a href="index.php#about" class="nav__link">About us</a>
+                                        <a href="/#about" class="nav__link">About us</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="index.php#services" class="nav__link">Our Services</a>
+                                        <a href="/#services" class="nav__link">Our Services</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="index.php#benefits" class="nav__link">Our Benefits</a>
+                                        <a href="/#benefits" class="nav__link">Our Benefits</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="index.php#portfolio" class="nav__link">Portfolio</a>
+                                        <a href="/#portfolio" class="nav__link">Portfolio</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="index.php#why" class="nav__link">References</a>
+                                        <a href="/#why" class="nav__link">References</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="index.php#team" class="nav__link">Our Team</a>
+                                        <a href="/#team" class="nav__link">Our Team</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -105,42 +105,43 @@
                 <p>Expert Soft - boutique highly specialized e-commerce software delivery and open Java stack company with a strong team of high professionals.</p>
                 <p>Just drop us your question and we will get back to you with a prompt reply!</p>
             </div>
+            <div class="callback-form__message"></div>
             <form class="callback-form" action="sendmailContacts.php" method="post" novalidate>
                 <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response">
-                <div class="callback-form__message"></div>
                 <div class="callback-form__row">
                     <div class="form-group callback-form__col">
-                        <label class="form-group__label" for="first-name">First name</label>
+                        <label class="form-group__label" for="first-name">First name <span class="ff-c">*</span></label>
                         <input type="text" class="form-group__input" id="first-name" name="firstName">
                         <span class="form-group__error-text"></span>
                     </div>
                     <div class="form-group callback-form__col">
-                        <label  class="form-group__label" for="last-name">Last name</label>
+                        <label  class="form-group__label" for="last-name">Last name <span class="ff-c">*</span></label>
                         <input type="text" class="form-group__input" id="last-name" name="lastName">
                         <span class="form-group__error-text"></span>
                     </div>
                 </div>
                 <div class="callback-form__row">
                     <div class="form-group callback-form__col">
-                        <label class="form-group__label" for="email">Email</label>
+                        <label class="form-group__label" for="email">Email <span class="ff-c">*</span></label>
                         <input type="email" class="form-group__input" id="email" name="email">
                         <span class="form-group__error-text"></span>
                     </div>
                     <div class="form-group callback-form__col">
-                        <label class="form-group__label" for="company">Company</label>
+                        <label class="form-group__label" for="company">Company <span class="ff-c">*</span></label>
                         <input type="text" class="form-group__input" id="company" name="company">   
                         <span class="form-group__error-text"></span>                
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="form-group__label" for="message-area">Your inquiry or comments</label>
+                    <label class="form-group__label" for="message-area">Your inquiry or comments <span class="ff-c"></span>*</span></label>
                     <textarea class="form-group__input" rows="5" id="message-area" name="message-area"></textarea>
                     <span class="form-group__error-text"></span>
                 </div>
                 <div class="form-checkbox callback-form__form-checkbox">
                     <input type="checkbox" class="form-checkbox__input" value="" id="agreement">
-                    <label class="form-checkbox__label" for="agreement">You are agreeing that Expert Software Development, LLC processes and uses your personal data for customer care and for professional communication.</label class="form-checkbox__input" >
+                    <label class="form-checkbox__label" for="agreement">You are agreeing that Expert Software Development, LLC processes and uses your personal data for customer care and for professional communication. <span class="ff-c">*</span></label class="form-checkbox__input" >
                 </div>
+                <p class="ff ff-c">* All fields are required</p>
                 <button type="submit" class="btn btn-primary callback-form__btn">Submit</button>
             </form>
         </main>

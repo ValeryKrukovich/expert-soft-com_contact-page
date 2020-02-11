@@ -48,7 +48,10 @@ textarea {
 .callback-form__message {
     color: var(--color-green);
     text-align: center;
-    /* margin-bottom: 70px; */
+}
+
+.callback-form__message_active {
+    margin-bottom: 100px;
 }
 
 .form-group {
@@ -185,4 +188,12 @@ textarea {
     .form-checkbox__input {
         top: 12px;
     }
+}
+
+.ff {
+    font-size: var(--font-size-text-medium);
+}
+
+.ff-c {
+    color: gray;
 }

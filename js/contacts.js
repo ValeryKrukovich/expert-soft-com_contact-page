@@ -72,9 +72,8 @@ form.addEventListener('submit', function(event) {
             data: $(this).serialize(),
             dataType: 'json',
         }).done(function(data) {
-            form.reset();
-            let $message = $(form).find('.callback-form__message');
-            $message.text('Thank you! Your message has been sent.');
+            $(form).fadeOut();
+            $('.callback-form__message').text('Thank you! Your message has been sent.').addClass('callback-form__message_active');
         });
     }
 });
