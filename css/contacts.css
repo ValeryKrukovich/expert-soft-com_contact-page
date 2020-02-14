@@ -24,7 +24,7 @@ textarea {
 }
 
 .contacts-page__text {
-    padding: 50px 0 30px 0;
+    padding: 50px 0 20px 0;
 }
 
 .contacts-page__text h1 {
@@ -169,16 +169,18 @@ textarea {
 @media (min-width: 1200px) {
     .contacts-page {
         width: 80%;
+        max-width: 1260px;
     }
 }
 
 @media (min-width: 1399.98px) {
     :root {
-        --font-size-text-h1: 54px;
+        --font-size-text-h1: 50px;
         --font-size-main-text: 24px;
     }
     .contacts-page__text {
-        padding: 80px 0 60px;
+        /* padding: 80px 0 60px; */
+        padding-top: 80px;
     }
 
     .contacts-page__text h1 {
