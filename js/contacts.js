@@ -5,12 +5,16 @@ const inputFirstName = document.querySelector('#first-name');
 const inputEmail = document.querySelector('#email');
 const btnSendMessage = document.querySelector('.footer__send-message');
 
-//Focus onclick
+/**
+*Focus onclick
+*/
 btnSendMessage.addEventListener('click', function() {
     inputFirstName.focus();
 });
 
-//Form Validation
+/**
+*Form Validation
+*/
 function emailIsValid(email) {
     return /\S+@\S+\.\S+/.test(email)
 }
@@ -77,3 +81,37 @@ form.addEventListener('submit', function(event) {
         });
     }
 });
+
+/**
+*Navigation
+*/
+$(document).on('click', '.menu-btn', function(e){
+    if($('html').hasClass('is-menu-open')){
+        $('html').removeClass('is-menu-open');
+        noscrollFinish();
+    } else {
+        noscrollStart();
+        $('html').addClass('is-menu-open');
+    }
+});
+
+$(document).on('click', '.menu-popup__close, .menu-popup__bg', function(e){
+    $('html').removeClass('is-menu-open');
+});
+
+/**
+* Mobile Scroll Prevent
+*/
+var noscrollY = 0;
+
+function noscrollStart(){
+    noscrollY = $(document).scrollTop();
+    $('body').css('top', - noscrollY + 'px');
+    $('html').addClass('is-noscroll');
+}
+
+function noscrollFinish(){
+    $('html').removeClass('is-noscroll');
+    $(document).scrollTop(noscrollY);
+    $('body').css('top', 'auto');
+}

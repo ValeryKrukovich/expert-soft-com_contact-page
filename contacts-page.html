@@ -107,41 +107,41 @@
             </div>
             <div class="callback-form__message"></div>
             <form class="callback-form" action="sendmailContacts.php" method="post" novalidate>
+                <p>* All fields are required</p>
                 <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response">
                 <div class="callback-form__row">
                     <div class="form-group callback-form__col">
-                        <label class="form-group__label" for="first-name">First name <span class="ff-c">*</span></label>
+                        <label class="form-group__label" for="first-name">First name *</label>
                         <input type="text" class="form-group__input" id="first-name" name="firstName">
                         <span class="form-group__error-text"></span>
                     </div>
                     <div class="form-group callback-form__col">
-                        <label  class="form-group__label" for="last-name">Last name <span class="ff-c">*</span></label>
+                        <label  class="form-group__label" for="last-name">Last name *</label>
                         <input type="text" class="form-group__input" id="last-name" name="lastName">
                         <span class="form-group__error-text"></span>
                     </div>
                 </div>
                 <div class="callback-form__row">
                     <div class="form-group callback-form__col">
-                        <label class="form-group__label" for="email">Email <span class="ff-c">*</span></label>
+                        <label class="form-group__label" for="email">Email *</label>
                         <input type="email" class="form-group__input" id="email" name="email">
                         <span class="form-group__error-text"></span>
                     </div>
                     <div class="form-group callback-form__col">
-                        <label class="form-group__label" for="company">Company <span class="ff-c">*</span></label>
+                        <label class="form-group__label" for="company">Company *</label>
                         <input type="text" class="form-group__input" id="company" name="company">   
                         <span class="form-group__error-text"></span>                
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="form-group__label" for="message-area">Your inquiry or comments <span class="ff-c"></span>*</span></label>
+                    <label class="form-group__label" for="message-area">Your inquiry or comments *</label>
                     <textarea class="form-group__input" rows="5" id="message-area" name="message-area"></textarea>
                     <span class="form-group__error-text"></span>
                 </div>
                 <div class="form-checkbox callback-form__form-checkbox">
                     <input type="checkbox" class="form-checkbox__input" value="" id="agreement">
-                    <label class="form-checkbox__label" for="agreement">You are agreeing that Expert Software Development, LLC processes and uses your personal data for customer care and for professional communication. <span class="ff-c">*</span></label class="form-checkbox__input" >
+                    <label class="form-checkbox__label" for="agreement">You are agreeing that Expert Software Development, LLC processes and uses your personal data for customer care and for professional communication. *</label class="form-checkbox__input" >
                 </div>
-                <p class="ff ff-c">* All fields are required</p>
                 <button type="submit" class="btn btn-primary callback-form__btn">Submit</button>
             </form>
         </main>
