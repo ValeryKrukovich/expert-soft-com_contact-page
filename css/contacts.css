@@ -1,7 +1,6 @@
 :root {
     --font-size-text-h1: 22px;
     --font-size-main-text: 16px;
-    --font-size-text-medium: 20px;
     --border-radius-primary: 10px;
     --color-light-grey: #ced4da;
     --color-grey: #495057;
@@ -9,8 +8,9 @@
     --color-dark-blue: #2c4d9a;
     --color-red: #e41d36;
     --color-black: #000000;
+    --color-white: #ffffff;
     --color-green: #4CAF50;
-    --box-shodow-blue: 0 0 0 2px rgba(0,123,255,.25);
+    --box-shodow-blue: 0 0 0 2px rgba(44,77,154,.2);
     --box-shadow-red: 0 0 0 2px rgba(220,53,69,.25);
 }
 
@@ -24,7 +24,7 @@ textarea {
 }
 
 .contacts-page__text {
-    padding: 50px 0 20px 0;
+    padding: 40px 0  0;
 }
 
 .contacts-page__text h1 {
@@ -39,7 +39,7 @@ textarea {
 }
 
 .callback-form {
-    padding-bottom: 150px;
+    padding-bottom: 80px;
 }
 
 .callback-form::after { 
@@ -58,7 +58,7 @@ textarea {
 }
 
 .form-group {
-    margin: 0 0 25px;
+    margin: 0 0 15px;
 }
 
 .form-group__label {
@@ -73,14 +73,14 @@ textarea {
     font-size: var(--font-size-main-text-mb);
     font-weight: 400;
     line-height: 1.5;
-    color: var(--color-grey);
-    border: 2px solid var(--color-light-grey);
+    color: var(--color-white);
+    border: 2px solid transparent;
     border-radius: var(--border-radius-primary);
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: #95a4ca;
 }
 
 .form-group__input:focus {
-    border-color: var(--color-blue);
     outline: 0;
     box-shadow: var(--box-shodow-blue);
 }
@@ -92,7 +92,7 @@ textarea {
 
 .form-group__error-text {
     color: var(--color-red);
-    font-size: var(--font-size-text-medium);
+    font-size: var(--font-size-main-text);
 }
 
 .form-checkbox {
@@ -101,7 +101,7 @@ textarea {
 }
 
 .callback-form__form-checkbox {
-    padding: 0 0 80px 20px;
+    padding: 0 0 60px 20px;
 }
 
 .form-checkbox__input {
@@ -179,16 +179,19 @@ textarea {
         --font-size-main-text: 24px;
     }
     .contacts-page__text {
-        /* padding: 80px 0 60px; */
-        padding-top: 80px;
+        padding: 80px 0 20px;
     }
 
     .contacts-page__text h1 {
         line-height: 66px;
     }
 
+    .callback-form {
+        padding-bottom: 100px;
+    }
+
     .form-group {
-        margin: 0 0 30px;
+        margin: 0 0 20px;
     }
 
     .form-group__input {
@@ -197,5 +200,9 @@ textarea {
 
     .form-checkbox__input {
         top: 12px;
+    }
+
+    .callback-form__form-checkbox {
+        padding-bottom: 70px;
     }
 }
