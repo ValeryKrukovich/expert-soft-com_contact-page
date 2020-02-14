@@ -180,7 +180,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about anchor-menu" id="about">
         <header class="about__title title">
             <div class="container">
                 <h2 class="title__inner">About us</h2>
@@ -248,8 +248,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </section>
-
-    <section class="services" id="services">
+    
+    <section class="services anchor-menu" id="services">
         <header class="services__title title title_blue">
             <div class="container">
                 <h2 class="title__inner">Our Services</h2>
@@ -382,7 +382,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
 
-    <section class="benefits" id="benefits">
+    <section class="benefits anchor-menu" id="benefits">
         <header class="benefits__title title">
             <div class="container">
                 <h2 class="title__inner">Our <span class="hidden-mob">Key </span>Benefits</h2>
@@ -501,7 +501,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio anchor-menu" id="portfolio">
         <header class="portfolio__title title title_dark-blue">
             <div class="container">
                 <h2 class="title__inner">Portfolio</h2>
@@ -544,7 +544,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
 
-    <section class="why" id="why">
+    <section class="why anchor-menu" id="why">
         <header class="why__header">
             <div class="container">
                 <div class="why__header-inner">
@@ -959,7 +959,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
 
-    <section class="team" id="team">
+    <section class="team anchor-menu" id="team">
         <header class="team__title title">
             <div class="container">
                 <h2 class="title__inner">Our Team</h2>

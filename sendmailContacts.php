@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $fromEmail = 'site.mailer@expert-soft.by';
         $fromPass = 'geePwehh47dFlHi';
 
-        $toEmail = "V.Krukovich@gmail.com";
+        $toEmail = "veronica.kudina@expert-soft.by";
 
         $fromName = 'COM Site Mailer';
         $subject = 'Expert Soft COM Site Message';
