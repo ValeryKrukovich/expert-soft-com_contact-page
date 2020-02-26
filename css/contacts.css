@@ -2,9 +2,6 @@
     --font-size-text-h1: 22px;
     --font-size-main-text: 16px;
     --border-radius-primary: 10px;
-    --color-light-grey: #ced4da;
-    --color-grey: #495057;
-    --color-blue: #80bdff;
     --color-dark-blue: #2c4d9a;
     --color-red: #e41d36;
     --color-black: #000000;
@@ -101,7 +98,7 @@ textarea {
 }
 
 .callback-form__form-checkbox {
-    padding: 0 0 60px 20px;
+    padding: 0 0 36px 20px;
 }
 
 .form-checkbox__input {
@@ -128,7 +125,12 @@ textarea {
 
 .callback-form__btn {
     padding: 4px 50px;
+    margin-top: 30px;
     float: right;
+}
+
+.callback-form__btn:active {
+    transform: translateY(2px);
 }
 
 @media (min-width: 768px) {
@@ -200,9 +202,5 @@ textarea {
 
     .form-checkbox__input {
         top: 12px;
-    }
-
-    .callback-form__form-checkbox {
-        padding-bottom: 70px;
     }
 }

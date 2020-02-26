@@ -14,7 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $fromEmail = 'site.mailer@expert-soft.by';
         $fromPass = 'geePwehh47dFlHi';
 
-        $toEmail = "veronica.kudina@expert-soft.by";
+        $toEmail = "max@expert-soft.com";
+        $toEmail2 = "maria@expert-soft.com";
+        $toEmail3 = "sd.expertsoft@gmail.com";
+        $toEmail4 = "irina.svireiko@expert-soft.by";
 
         $fromName = 'COM Site Mailer';
         $subject = 'Expert Soft COM Site Message';
@@ -54,6 +57,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $mail->Port = 587;
             $mail->setFrom($fromEmail, $fromName);
             $mail->addAddress($toEmail); // Email получателя
+            $mail->addAddress($toEmail2); // Email получателя
+            $mail->addAddress($toEmail3); // Email получателя
+            $mail->addAddress($toEmail4); // Email получателя
 
             // Письмо
             $mail->isHTML(true);
