@@ -1,6 +1,6 @@
 <?php if (substr_count($_SERVER[‘HTTP_ACCEPT_ENCODING’], ‘gzip’)) ob_start(“ob_gzhandler”); else ob_start(); ?>
 <!DOCTYPE HTML>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Expert-Soft: Trusted delivery partner for B2C/B2B Commerce Digital transformation</title>
@@ -95,7 +95,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <a href="#why" class="nav__link">References</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#team" class="nav__link">Our Team</a>
+                                        <a href="our-cases.html" class="nav__link">Our cases</a>
                                     </li>
                                     <li class="nav__item">
                                         <a href="#contacts" class="nav__link">Contact Us</a>
