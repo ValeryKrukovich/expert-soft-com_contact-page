@@ -5,16 +5,12 @@ const inputFirstName = document.querySelector('#first-name');
 const inputEmail = document.querySelector('#email');
 const btnSendMessage = document.querySelector('.footer__send-message');
 
-/**
-*Focus onclick
-*/
+//Focus onclick
 btnSendMessage.addEventListener('click', function() {
     inputFirstName.focus();
 });
 
-/**
-*Form Validation
-*/
+//Form Validation
 function emailIsValid(email) {
     return /\S+@\S+\.\S+/.test(email)
 }
@@ -82,9 +78,7 @@ form.addEventListener('submit', function(event) {
     }
 });
 
-/**
-*Navigation
-*/
+//Navigation
 $(document).on('click', '.menu-btn', function(e){
     if($('html').hasClass('is-menu-open')){
         $('html').removeClass('is-menu-open');

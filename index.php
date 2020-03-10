@@ -80,25 +80,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <nav class="nav">
                                 <ul class="nav__list">
                                     <li class="nav__item">
-                                        <a href="#about" class="nav__link">About us</a>
+                                        <a href="#about" class="nav__link nav__link_anchor">About us</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#services" class="nav__link">Our Services</a>
+                                        <a href="#services" class="nav__link nav__link_anchor">Our Services</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#benefits" class="nav__link">Our Benefits</a>
+                                        <a href="#benefits" class="nav__link nav__link_anchor">Our Benefits</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                                        <a href="#portfolio" class="nav__link nav__link_anchor">Portfolio</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#why" class="nav__link">References</a>
+                                        <a href="#why" class="nav__link nav__link_anchor">References</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#team" class="nav__link">Our Team</a>
+                                        <a href="our-cases.html" class="nav__link">Our cases</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#contacts" class="nav__link">Contact Us</a>
+                                        <a href="#contacts" class="nav__link nav__link_anchor">Contact Us</a>
                                     </li>
                                 </ul>
                             </nav>
