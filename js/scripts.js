@@ -176,7 +176,7 @@ $(document).ready(function() {
     //     }
     // });
 
-    $('.nav__link').on('click', function(e) {
+    $('.nav__link_anchor').on('click', function(e) {
         e.preventDefault();
 
         if($('html').hasClass('is-menu-open')){
