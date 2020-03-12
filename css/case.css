@@ -123,14 +123,16 @@
 
 /*---- article ----*/
 .article h1 {
-    margin: 0 0 30px;
+    margin: 0 0 36px;
     text-align: center;
     font-size: 34px;
+    line-height: 42px;
 }
 
 .article h2 {
-    margin: 0 0 30px;
+    margin: 0 0 36px;
     font-size: 26px;
+    line-height: 34px;
 }
 
 .article p {
@@ -247,9 +249,11 @@
     /* article */
     .article h1 {
         font-size: 50px;
+        line-height: 58px;
     }
 
     .article h2 {
         font-size: 34px;
+        line-height: 42px;
     }
 }
